@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator</title>
+	<script>
+		function calc(operator){
+			var a, b;
+			a = document.getElementById("first").value;
+			b = document.getElementById("second").value;
+			document.getElementById("res").innerHTML = eval(a+operator+b);
+		}
+	</script>
+</head>
+<body>
+	<input id="first" type="number" name="a" value="0"><br>
+	<input id="second" type="number" name="b" value="0"><br>
+	<br>
+	<button onclick="calc('+')">Add</button>
+	<button onclick="calc('-')">Sub</button><br>
+	<button onclick="calc('*')">Mul</button>
+	<button onclick="calc('/')">Div</button><br>
+	<p id="res">Result here</p>
+</body>
+</html>
