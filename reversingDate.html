@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>reversing date</title>
+</head>
+<body>
+	<p id="demo3">Show here</p>
+	<p id="demo"></p>
+	<script>
+		var d = "2021-04-05 11:31:09";
+		var sliced = d.slice(0,10);
+		document.getElementById("demo3").innerHTML = sliced;
+		var arr = sliced.split("-");
+		arr.reverse();
+		arr.toString();
+		document.getElementById("demo").innerHTML = arr.join("-");
+	</script>
+</body>
+</html>
